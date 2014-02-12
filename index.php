@@ -1,0 +1,83 @@
+<?php get_header(); ?>
+
+	<div id="slider-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="twelvecol slides">		
+					<div class="slided" data-autorotate="4000">
+						<ul class="slider">
+						<?php query_posts( array ( 'orderby' => 'date', 'post_type' => 'Film','posts_per_page' => 53 ) ); ?>
+						<?php while (have_posts()) : the_post(); ?>
+							<li class="slide">					
+								<a href="<?php the_permalink() ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail('slide');} ?></a>
+								<h1 class="film-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>			
+								<?php the_date('Y', '<h3>', '</h3>'); ?>
+								<?php the_excerpt(); ?>
+							</li>
+						<?php endwhile; ?>			
+						</ul>
+					</div>			
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container front">
+		<div class="row">
+			<div class="eightcol">
+				<h2 class="col-title" style="color:#777;text-align:center;">&nbsp;</h2>
+			</div>
+			<div class="fourcol last">
+				<!--<h1 class="josefin-head" style="color:#777;text-align:center;">DVD HIGHLIGHT</h1>-->
+			</div>
+		</div>
+		<div class="row">
+			<div class="fourcol">
+				<div class="press">
+					<?php query_posts( array ( 'category_name' => 'Press', 'posts_per_page' => 3 ) ); ?>
+					<?php while (have_posts()) : the_post(); ?>
+					<article>
+						<a href="<?php the_permalink() ?>" class="rollover" title="<?php the_excerpt();?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail();} ?></a>
+						<h3 class="josefin"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
+						<?php the_excerpt();?>
+					</article>
+					<?php endwhile; ?>
+				</div>			
+			</div>
+			<div class="fourcol">
+				<div class="press">
+					<?php query_posts( array ( 'category_name' => 'Press', 'offset'=> 3, 'posts_per_page' => 3 ) ); ?>
+					<?php while (have_posts()) : the_post(); ?>
+					<article>
+						<a href="<?php the_permalink() ?>" class="rollover" title="<?php the_excerpt();?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail();} ?></a>
+						<h3 class="josefin"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
+						<?php the_excerpt();?>
+					</article>
+					<?php endwhile; ?>
+				</div>
+				<div class="more-press">
+					<a href="press">More Press</a>
+				</div>			
+			</div>
+			<div class="fourcol last">
+				<div class="press">
+					<?php query_posts( array ( 'category_name' => 'News', 'posts_per_page' => 1 ) ); ?>
+					<?php while (have_posts()) : the_post(); ?>
+					<article>
+						<a href="<?php the_permalink() ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail('spotlight');} ?></a>
+						<div class="clear">&nbsp;</div>
+						<!--<h3 class="josefin"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>-->
+						<?php the_excerpt();?>
+					</article>
+					<?php endwhile; ?>
+					<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fphfilms&amp;height=380&amp;show_faces=false&amp;colorscheme=light&amp;stream=true&amp;show_border=false&amp;header=true" style="border:none; overflow:hidden; width:100%; height:350px;"></iframe>
+					<div class="social-tweet">
+						<a class="twitter-timeline" href="https://twitter.com/PHFilms" data-widget-id="345670204174503936">Tweets by @PHFilms</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>				
+				</div>
+			</div>
+		</div><!-- row -->
+	</div>
+
+<?php get_footer(); ?>
