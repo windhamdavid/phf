@@ -978,6 +978,7 @@ div#PPMiniCart form input {
 }
 .wp-caption-text {
 	text-align: center;
+	font-size:11px;
 }
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
