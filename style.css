@@ -808,12 +808,13 @@ li.next {
 .journal {
 	background: #fff;
 }
-.journal img {
+/* .journal img {
 	float: left;
 	margin: 0 21px 11px 0;
 	padding: 10px;
 	background: #cecece;
-}
+}*** Let's let wp-caption handle this */
+
 .journal article {
 	padding: 47px;
 	margin: 0px 0;
@@ -957,6 +958,68 @@ div#PPMiniCart form input {
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+
+
+
+/***  WP Content   ***/
+
+
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 1.2% auto 0;
+	max-width: 98%;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+.site-main .gallery {
+	margin-bottom: 1.5em;
+}
+.gallery-caption {
+}
+.site-main .gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.site-main .gallery dd {
+	margin: 0;
+}
+.site-main .gallery-columns-4 .gallery-item {
+}
+.site-main .gallery-columns-4 .gallery-item img {
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
 }
 
 
