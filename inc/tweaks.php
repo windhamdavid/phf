@@ -137,3 +137,9 @@ function ph_rss_widget(){
   wp_add_dashboard_widget( 'ph-rss', 'PHFilms', 'ph_rss_output');
 }
 
+function ph_editor_styles() {
+    add_editor_style( 'style.css' );
+}
+add_action( 'init', 'ph_editor_styles' );
+
+?>
