@@ -698,6 +698,24 @@ img.play {
 }
 
 
+.promo {
+	padding: 30px 0;
+	min-height: 540px;	
+}
+.promo h1.times {
+	font-size: 23px;
+	font-family:times;
+	font-weight:200;
+}
+
+.promo span.subtitle {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin-left: 20px;
+	letter-spacing:2px
+}
+
+
 #press-wrap {
 	margin: 0;
 
@@ -979,6 +997,7 @@ div#PPMiniCart form input {
 .wp-caption-text {
 	text-align: center;
 	font-size:11px;
+	padding: 0 5px;
 }
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
@@ -1200,7 +1219,7 @@ footer p {
 	padding: 20px 0px 40px;
 }
 .social {
-	margin: 45px 0px 0px 0;
+	margin: 45px 10px 0px 0;
 }
 .social-tweet {
 	position: relative;
@@ -1329,7 +1348,7 @@ span.tumblr {
 .tooltip{display:inline;position:relative}
 .tooltip:hover{text-decoration:none}
 .tooltip:hover:after{
-	margin-left: 150px;
+	margin-left: 100px;
 	background:#111;
 	background:rgba(0,0,0,.8);
 	border-radius:5px;
