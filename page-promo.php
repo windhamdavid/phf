@@ -9,6 +9,7 @@
 				<header class="entry-header">
 					<h1 class="times"><?php the_title(); ?> <span class="subtitle">a documentary by Chris Hegedus and D.A. Pennebaker</span></h1>
 				</header>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/LOGLINE.png" />
 			<div class="sixcol">
 				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					<div style="float:left;margin: 0 20px 20px 0;max-width:100%;">

@@ -703,9 +703,10 @@ img.play {
 	min-height: 540px;	
 }
 .promo h1.times {
-	font-size: 23px;
+	font-size: 47px;
 	font-family:times;
 	font-weight:200;
+	margin-top:20px;
 }
 
 .promo span.subtitle {
