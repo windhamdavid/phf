@@ -42,7 +42,10 @@
 						<?php the_excerpt();?>
 					</article>
 					<?php endwhile; ?>
-				</div>			
+				</div>
+				<div class="more-press">
+					<a href="press">More Press</a>
+				</div>		
 			</div>
 			<div class="eightcol last">
 				<div class="press promo-front">
@@ -65,10 +68,7 @@
 						<?php the_excerpt();?>
 					</article>
 					<?php endwhile; ?>
-				</div>
-				<div class="more-press">
-					<a href="press">More Press</a>
-				</div>			
+				</div>		
 			</div>
 			<div class="fourcol last">
 				<div class="press">
