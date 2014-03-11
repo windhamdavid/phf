@@ -44,6 +44,17 @@
 					<?php endwhile; ?>
 				</div>			
 			</div>
+			<div class="eightcol last">
+				<div class="press promo-front">
+					<h1 class="times"><a href="http://phfilms.com/unlocking-the-cage">Unlocking the Cage</a><br /> <span class="subtitle">a documentary by Chris Hegedus and D.A. Pennebaker</span></h1>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/LOGLINE.png" />
+					<?php $upload_dir = wp_upload_dir();?>
+					<a href="http://phfilms.com/unlocking-the-cage"><img src="<?php echo $upload_dir['baseurl']; ?>/stevenwise-250x140.jpg" class="promo-front" alt="stevenwise" /></a>
+					<p>“They used to bark at me when I walked into the courtroom” says renowned animal rights attorney Steven Wise. After 30 years of preparation, Steve and his legal team, the Nonhuman Rights Project (NhRP), are making history by filing the first lawsuits to transform an animal from a thing with no rights to a person with legal protections.</p>
+					<p><a href="http://phfilms.com/unlocking-the-cage"><strong>Unlocking the Cage</strong></a> documents Steve’s unprecedented legal challenge to break down the wall that separates animals from humans. Steve argues that based on scientific evidence cognitively complex animals such as chimpanzees, whales, dolphins, and elephants have the capacity for fundamental personhood rights (such as bodily liberty) that would protect them from physical abuse. For the past two years, we have followed Steve and his team on their journey, from developing their legal strategy to discovering the perfect chimpanzee plaintiffs confined in private homes and roadside zoos. &nbsp;<a href="http://phfilms.com/unlocking-the-cage"><strong>Read On</strong></a></p>
+					<div class="btm-border">&nbsp;</div>
+				</div>
+			</div>
 			<div class="fourcol">
 				<div class="press">
 					<?php query_posts( array ( 'category_name' => 'Press', 'offset'=> 3, 'posts_per_page' => 3 ) ); ?>
