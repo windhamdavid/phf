@@ -12,7 +12,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/LOGLINE.png" />
 			<div class="sixcol">
 				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-					<div style="float:left;margin: 0 20px 20px 0;max-width:100%;">
+					<div style="float:left;margin: 0 20px 0px 0;max-width:100%;">
 					<?php the_post_thumbnail('large');?>
 					</div>
 					<?php the_excerpt(); ?>

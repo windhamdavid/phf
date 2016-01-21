@@ -14,8 +14,15 @@
 								printf( __( 'Tag Archives: %s', '_s' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 
 							} elseif ( is_author() ) {
+								/* Queue the first post, that way we know
+								 * what author we're dealing with (if that is the case).
+								*/
 								the_post();
 								printf( __( 'Author Archives: %s', '_s' ), '<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
+								/* Since we called the_post() above, we need to
+								 * rewind the loop back to the beginning that way
+								 * we can run the loop properly, in full.
+								 */
 								rewind_posts();
 
 							} elseif ( is_day() ) {
@@ -36,6 +43,7 @@
 				</header>
 				<?php rewind_posts(); ?>
 
+				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'content', get_post_format() );?>
 				<?php endwhile; ?>
@@ -43,12 +51,12 @@
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
 						<h1 class="entry-title"><?php _e( 'Nothing Found', '_s' ); ?></h1>
-					</header>
+					</header><!-- .entry-header -->
 					<div class="entry-content">
 						<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', '_s' ); ?></p>
 						<?php get_search_form(); ?>
-					</div>
-				</article>
+					</div><!-- .entry-content -->
+				</article><!-- #post-0 -->
 			<?php endif; ?>
 			</div>
 		</div>

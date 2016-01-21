@@ -13,7 +13,7 @@ function _ph_content_nav( $nav_id ) {
 	<nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
 		<h1 class="assistive-text"><?php _e( 'Post navigation', '_ph' ); ?></h1>
 
-	<?php if ( is_single() ) : ?>
+	<?php if ( is_single() ) : // navigation links for single posts ?>
 
 		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', '_ph' ) . '</span> %title' ); ?>
 		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', '_ph' ) . '</span>' ); ?>
@@ -64,25 +64,26 @@ function _ph_comment( $comment, $args, $depth ) {
 				<div class="comment-meta commentmetadata">
 					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
 					<?php
+						/* translators: 1: date, 2: time */
 						printf( __( '%1$s at %2$s', '_ph' ), get_comment_date(), get_comment_time() ); ?>
 					</time></a>
 					<?php edit_comment_link( __( '(Edit)', '_ph' ), ' ' );
 					?>
-				</div>
+				</div><!-- .comment-meta .commentmetadata -->
 			</footer>
 
 			<div class="comment-content"><?php comment_text(); ?></div>
 
 			<div class="reply">
 				<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-			</div>
-		</article>
+			</div><!-- .reply -->
+		</article><!-- #comment-## -->
 
 	<?php
 			break;
 	endswitch;
 }
-endif;
+endif; // ends check for _ph_comment()
 
 if ( ! function_exists( '_ph_posted_on' ) ) :
 
