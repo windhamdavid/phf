@@ -98,6 +98,8 @@ form { margin: 0;padding: 0; }
 
 /** /\/\/***   TYPOGRAPHY   ***\/\/\/  **/
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap');
+
 @font-face {
     font-family: 'JosefinSansStdLight';
     src: url('img/fonts/JosefinSansStd-Light-webfont.eot');
@@ -107,28 +109,6 @@ form { margin: 0;padding: 0; }
          url('img/fonts/JosefinSansStd-Light-webfont.svg#JosefinSansStdLight') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Josefin Sans SemiBold'), local('JosefinSans-SemiBold'), url('https://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04zxefZI2gqg-NXpw43Z_DJ3I.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Josefin Sans'), local('JosefinSans'), url('https://themes.googleusercontent.com/static/fonts/josefinsans/v3/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url('https://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04zxAPw1J91axKNXP_-QX9CC8.woff') format('woff');
 }
 
 
@@ -307,6 +287,7 @@ header {
 	
 	header h1.josefin a:hover {
 		color: #555;
+    text-decoration:none;
 	}
 	nav h2 a {
 		color: #fff;
