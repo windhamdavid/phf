@@ -114,21 +114,21 @@ form { margin: 0;padding: 0; }
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Josefin Sans SemiBold'), local('JosefinSans-SemiBold'), url('http://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04zxefZI2gqg-NXpw43Z_DJ3I.woff') format('woff');
+  src: local('Josefin Sans SemiBold'), local('JosefinSans-SemiBold'), url('https://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04zxefZI2gqg-NXpw43Z_DJ3I.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Josefin Sans'), local('JosefinSans'), url('http://themes.googleusercontent.com/static/fonts/josefinsans/v3/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+  src: local('Josefin Sans'), local('JosefinSans'), url('https://themes.googleusercontent.com/static/fonts/josefinsans/v3/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url('http://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04zxAPw1J91axKNXP_-QX9CC8.woff') format('woff');
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url('https://themes.googleusercontent.com/static/fonts/josefinsans/v3/C6HYlRF50SGJq1XyXj04zxAPw1J91axKNXP_-QX9CC8.woff') format('woff');
 }
 
 
@@ -1432,4 +1432,73 @@ span.tumblr {
 }
 .elsewhere p a:hover {
 	color: #fff;
+}
+
+
+/* a lil css added by Marianne */
+p {
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+h1 {
+	line-height: 1;
+}
+
+.press h3.josefin {
+	line-height: 1.2;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+	.front .press article img {
+		max-width: 100%;
+		margin: 0 auto 20px auto;
+		width: 100%;
+	}
+	.press.promo-front img {
+		float: none;
+		max-width: 420px;
+		margin: 0 auto 10px auto;
+		width: 100%;
+	}
+	.promo-front span.subtitle {
+		letter-spacing: .5px;
+	}
+	footer img.logo {
+		float: none;
+    	margin: 30px auto;
+    	display: block;	
+	}
+	.social {
+		margin: -20px 10px 30px 10px;
+	}
+	img.attachment-spotlight.size-spotlight.wp-post-image {
+		margin-bottom: -10px;
+	}
+	.front .press article {
+		margin-top: 0;
+	}
+
+	.row, body, .container {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol, .row .slidecol {
+	width: auto;
+	float: none;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
 }
