@@ -49,7 +49,7 @@
 							<?php $price2 = get_post_custom_values('price2'); if (!empty($price2[0])) { ?><option value="Library DVD">Library DVD <?php echo get_post_meta($post->ID, 'price2', true) ?></option><?php } ?>
 							<?php $price3 = get_post_custom_values('price3'); if (!empty($price3[0])) { ?><option value="University DVD">University DVD <?php echo get_post_meta($post->ID, 'price3', true) ?></option><?php } ?>
 						</select>
-						<input  class="buy-now" type="submit" value="Add to Cart" border="0" name="submit">							
+						<input  class="buy-now" type="submit" value="Add to Cart" border="0" name="submit" disabled>							
 						<input type="hidden" name="add" value="1">
 						<input type="hidden" name="cmd" value="_cart">
 						<input type="hidden" name="business" value="sales@phfilms.com">
