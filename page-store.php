@@ -5,6 +5,7 @@
 	<div class="store-page">
 	<div class="row">
 		<div class="tencol">
+      <p style="font-size:18px;background:#feffa4;color:#f00;padding:5px 10px;">Due to Covid-19, we are temporarily unable to fulfill orders. Please check back later.</p>
 		</div>
 		<div class="twocol last">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="last buy-now"> 
