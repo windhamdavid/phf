@@ -98,7 +98,7 @@ function phf_login_logo() {
     </style>';
 }
 
-add_action( 'admin_head', 'phf_hide' );
+//add_action( 'admin_head', 'phf_hide' );
 function phf_hide() {
     ?>
     <style type="text/css" media="screen">
