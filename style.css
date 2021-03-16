@@ -924,7 +924,7 @@ form.show-btn input {
 	background: #fff;
 }
 .store-item input { 
-	width:auto !important; overflow:visible; border:1px solid #bfbfbf; border-right-color:#908d8d; border-bottom-color:#908d8d; padding:1px .5em; background:#e1e1e1 url(images/button_default.gif) left center repeat-x; color:#000; 
+	width:auto !important; overflow:visible; border:1px solid #bfbfbf; border-right-color:#908d8d; border-bottom-color:#908d8d; padding:1px .5em; background:#e1e1e1; color:#000; 
   margin: 10px 0 0;
 }
 .store-item input.buy-now {
