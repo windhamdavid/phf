@@ -23,18 +23,18 @@
 	</div>
 
 	<div class="container front">
-		<div class="row">
+		<!--<div class="row">
 			<div class="eightcol">
 				<h2 class="col-title" style="color:#777;text-align:center;">&nbsp;</h2>
 			</div>
 			<div class="fourcol last">
-				<!--<h1 class="josefin-head" style="color:#777;text-align:center;">DVD HIGHLIGHT</h1>-->
+				<h1 class="josefin-head" style="color:#777;text-align:center;">DVD HIGHLIGHT</h1>
 			</div>
-		</div>
+		</div>-->
 		<div class="row">
 			<div class="fourcol">
 				<div class="press">
-					<?php query_posts( array ( 'category_name' => 'Press', 'posts_per_page' => 3 ) ); ?>
+					<?php query_posts( array ( 'category_name' => 'Press', 'posts_per_page' => 5 ) ); ?>
 					<?php while (have_posts()) : the_post(); ?>
 					<article>
 						<a href="<?php the_permalink() ?>" class="rollover" title="<?php the_excerpt();?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail();} ?></a>
@@ -60,7 +60,7 @@
 			</div>
 			<div class="fourcol">
 				<div class="press">
-					<?php query_posts( array ( 'category_name' => 'Press', 'offset'=> 3, 'posts_per_page' => 3 ) ); ?>
+					<?php query_posts( array ( 'category_name' => 'Press', 'offset'=> 5, 'posts_per_page' => 4 ) ); ?>
 					<?php while (have_posts()) : the_post(); ?>
 					<article>
 						<a href="<?php the_permalink() ?>" class="rollover" title="<?php the_excerpt();?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail();} ?></a>
@@ -72,7 +72,7 @@
 			</div>
 			<div class="fourcol last">
 				<div class="press">
-					<?php query_posts( array ( 'category_name' => 'News', 'posts_per_page' => 1 ) ); ?>
+					<?php query_posts( array ( 'cat' => 50, 'posts_per_page' => 1 ) ); ?>
 					<?php while (have_posts()) : the_post(); ?>
 					<article>
 						<a href="<?php the_permalink() ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail('spotlight');} ?></a>

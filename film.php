@@ -76,6 +76,9 @@
 								<?php if ( get_post_meta($post->ID, 'publicity', true) ) : ?>
 						     	<li><a href="#media">Publicity</a></li>
 								<?php endif; ?>
+								<?php if ( get_post_meta($post->ID, 'reviews', true) ) : ?>
+						     	<li><a href="#reviews">Reviews</a></li>
+								<?php endif; ?>
 						   </ul>					
 							<ul class="tabs-content">
 								<li class="active" id="summary">
@@ -89,8 +92,12 @@
 								<li id="media">			
 									<?php if ( get_post_meta($post->ID, 'publicity', true) ) : ?>
 									   <?php echo get_post_meta($post->ID, 'publicity', true) ?>
-									<?php endif; ?>
-									
+									<?php endif; ?>						
+								</li>
+								<li id="reviews">			
+									<?php if ( get_post_meta($post->ID, 'reviews', true) ) : ?>
+									   <?php echo get_post_meta($post->ID, 'reviews', true) ?>
+									<?php endif; ?>						
 								</li>
 							</ul>
 						</article>

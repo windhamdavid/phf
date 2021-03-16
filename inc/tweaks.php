@@ -158,6 +158,6 @@ function ph_rss_widget(){
 function ph_editor_styles() {
     add_editor_style( 'style.css' );
 }
-add_action( 'init', 'ph_editor_styles' );
+//add_action( 'init', 'ph_editor_styles' );
 
 ?>

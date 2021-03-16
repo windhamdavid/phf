@@ -163,7 +163,7 @@ add_action('save_post', 'phf_meta_save');
 function phf_meta_save(){
 
 	global $post;
-
+  if( !is_object($post) ) {return;}
   if( $post->post_type == 'film' )  {
   	if (isset( $_POST ) ) {
   		update_post_meta($post->ID, "ph_year", $_POST["ph_year"]);

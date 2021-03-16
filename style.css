@@ -569,7 +569,7 @@ li.credits {
 	background: #fff;
 }
 .container.films {
-	padding: 20px 30px;
+	padding: 30px 30px 100px;
 	background: #b3b3b3;
 }
 .films {
@@ -743,7 +743,7 @@ img.play {
 	margin: 23px 0;
 }
 .press img {
-	float: left;
+
 	margin: 0px 0px 15px 15px;
 }
 .press article {
