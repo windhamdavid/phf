@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	
-	$("h1.josefin a").mouseover(function(){$(this).stop().animate({color: "#ccc"},{queue:false, duration:500}) });
-	$("h1.josefin a").mouseout(function(){$(this).stop().animate({color: "#fff"},{queue:false, duration:500}) });
-	$("h2.josefin a").mouseover(function(){$(this).stop().animate({color: "#555"},{queue:false, duration:500}) });
-	$("h2.josefin a").mouseout(function(){$(this).stop().animate({color: "#fff"},{queue:false, duration:500}) });	
+	$("h1.josefin a").mouseover(function(){$(this).stop().animate({color: "#ccc"},{queue:false, duration:300}) });
+	$("h1.josefin a").mouseout(function(){$(this).stop().animate({color: "#fff"},{queue:false, duration:300}) });
+	$("h2.josefin a").mouseover(function(){$(this).stop().animate({color: "#ccc"},{queue:false, duration:300}) });
+	$("h2.josefin a").mouseout(function(){$(this).stop().animate({color: "#fff"},{queue:false, duration:300}) });	
 	$('.films').sorted();
 	$('.tabs').show(); //FOUC
 	$('.slided').show(); //FOUC

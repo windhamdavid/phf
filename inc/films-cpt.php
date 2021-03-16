@@ -80,7 +80,7 @@ function phf_video() {
 	$video = $custom["video"][0];
 	?>
 	<label>URL:</label>
-	<input name="video" value="<?php echo $video; ?>" />
+	<input name="video" value="<?php echo $video; ?>" style="width: 500px;"/>
 	<?php
 }
 
@@ -163,32 +163,24 @@ add_action('save_post', 'phf_meta_save');
 function phf_meta_save(){
 
 	global $post;
-	
-	//if (!wp_verify_nonce($_POST['ph_nonce'],__FILE__)) return $post_id;
 
-	if ( !current_user_can( 'edit_post', $post->ID ))
-	    return $post->ID;
-	
-	if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
-	    return $post->ID;
-	}
-  	if( $post->post_type == 'film' )  {
-	if (isset( $_POST ) ) {
-		update_post_meta($post->ID, "ph_year", $_POST["ph_year"]);
-		update_post_meta($post->ID, "video", $_POST["video"]);
-		update_post_meta($post->ID, "credits", $_POST["credits"]);
-		update_post_meta($post->ID, "publicity", $_POST["publicity"]);
-		update_post_meta($post->ID, "featuring", $_POST["featuring"]);
-		update_post_meta($post->ID, "reviews", $_POST["reviews"]);	
-		update_post_meta($post->ID, "color", $_POST["color"]);
-		update_post_meta($post->ID, "color2", $_POST["color2"]);
-		update_post_meta($post->ID, "color3", $_POST["color3"]);
-		update_post_meta($post->ID, "price", $_POST["price"]);
-		update_post_meta($post->ID, "price2", $_POST["price2"]);
-		update_post_meta($post->ID, "price3", $_POST["price3"]);
-		update_post_meta($post->ID, "price4", $_POST["price4"]);
-	}
-}
+  if( $post->post_type == 'film' )  {
+  	if (isset( $_POST ) ) {
+  		update_post_meta($post->ID, "ph_year", $_POST["ph_year"]);
+  		update_post_meta($post->ID, "video", $_POST["video"]);
+  		update_post_meta($post->ID, "credits", $_POST["credits"]);
+  		update_post_meta($post->ID, "publicity", $_POST["publicity"]);
+  		update_post_meta($post->ID, "featuring", $_POST["featuring"]);
+  		update_post_meta($post->ID, "reviews", $_POST["reviews"]);	
+  		update_post_meta($post->ID, "color", $_POST["color"]);
+  		update_post_meta($post->ID, "color2", $_POST["color2"]);
+  		update_post_meta($post->ID, "color3", $_POST["color3"]);
+  		update_post_meta($post->ID, "price", $_POST["price"]);
+  		update_post_meta($post->ID, "price2", $_POST["price2"]);
+  		update_post_meta($post->ID, "price3", $_POST["price3"]);
+  		update_post_meta($post->ID, "price4", $_POST["price4"]);
+  	}
+  }
 }
 
 

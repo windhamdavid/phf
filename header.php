@@ -16,12 +16,6 @@
 				<div class="twelvecol">
 					<h1 class="josefin title"><a href="<?php echo home_url( '/' ); ?>">PENNEBAKER HEGEDUS FILMS</a></h1>	
 					<nav><h2 class="josefin"><a href="<?php echo home_url( '/' ); ?>films">FILMS</a> | <a href="<?php echo home_url( '/' ); ?>history">HISTORY</a> | <a href="<?php echo home_url( '/' ); ?>press">PRESS</a> | <a href="<?php echo home_url( '/' ); ?>license">LICENSING</a> | <a href="<?php echo home_url( '/' ); ?>store">STORE</a></h2></nav>
-					<div class="search">
-						<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-						<div class="searchfield"><input type="submit" class="submit" name="submit" id="searchsubmit" value="" />
-						<input type="text" class="field" name="s" id="s" placeholder="" /></div>
-						</form>
-					</div>	
 				</div>
 			</div>
 		</div>

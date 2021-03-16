@@ -7,7 +7,7 @@
 			<div class="fourcol">
 				<div class="info">
 					<p>262 West 91st Street New York, NY 10024</p>
-					<p><a href="<?php echo home_url( '/' ); ?>contact">Contact</a> | <a href="">info@phfilms.com</a></p>	
+					<p><a href="<?php echo home_url( '/' ); ?>contact">Contact</a> | <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#112;&#104;&#102;&#105;&#108;&#109;&#115;&#46;&#99;&#111;&#109?subject=PHFilms.com">&#105;&#110;&#102;&#111;&#64;&#112;&#104;&#102;&#105;&#108;&#109;&#115;&#46;&#99;&#111;&#109</a></p>	
 					<a href="<?php echo home_url( '/' ); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/camera.png" width="120" alt="PENNEBAKER HEGEDUS FILMS" title="PENNEBAKER HEGEDUS FILMS"/></a>
 				</div>
 			</div>
@@ -15,16 +15,28 @@
 
 			</div>
 			<div class="sixcol last">
+        
+        <div class="row">
+  				<div class="search">
+  					<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+  						<div class="searchfield"><input type="submit" class="submit" name="submit" id="searchsubmit" value="" />
+  						  <input type="text" class="field" name="s" id="s" placeholder="" />
+              </div>
+  					</form>
+  				</div>
+        </div>
+        
 				<div class="social">
 					<p class="symbol">
 						&nbsp; <a href="http://vimeo.com/phfilms" title="Vimeo" class="tooltip" target="_blank"><span class="vimeo">&nbsp;</span></a> 
 						&nbsp; <a href="http://www.youtube.com/user/PennebakerHegedus" title="YouTube" class="tooltip" target="_blank"><span class="yt">&nbsp;</span></a> 
-						&nbsp; <a href="http://gowatchit.com/director/D-A--Pennebaker" title="GoWatchIt" class="tooltip" target="_blank"><span class="gowatch">&nbsp;</span></a>  
+						&nbsp; <a href="https://www.justwatch.com/us/search?person_id=69816" title="JustWatch" class="tooltip" target="_blank"><span class="gowatch">&nbsp;</span></a>  
 						&nbsp; <a href="http://www.facebook.com/PHFilms" title="Facebook" class="tooltip" target="_blank"><span class="fb">&nbsp;</span></a> 
 						&nbsp; <a href="http://twitter.com/#!/phfilms" title="Twitter" class="tooltip" target="_blank"><span class="twit">&nbsp;</span></a> 
 						&nbsp; <a href="http://pennebakerhegedusfilms.tumblr.com/" title="Tumblr" class="tooltip" target="_blank"><span class="tumblr">&nbsp;</span></a>
 					</p>
 				</div>
+
 			</div>
 		</div>
 	</div>

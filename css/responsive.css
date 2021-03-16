@@ -5,7 +5,7 @@
 
 .container {
 	padding: 0 30px;
-	max-width: 931px;
+	max-width: 992px;
 	margin: 0 auto;
 	}
 
@@ -66,9 +66,7 @@ img {height: auto;}
 
 
 /* tablets (ipad 3 is sized to default desktop)*/
-@media only screen 
-	and (min-width : 641px)
-	and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 	html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
 	body {
 	font-size: 16px;
@@ -82,7 +80,6 @@ img {height: auto;}
 	h2.josefin {
 	font-size: 15px;
 	line-height: 17px;
-	letter-spacing: 5px;
 	}
 	.elsewhere p {
 	font-family:WebSymbolsRegular;
