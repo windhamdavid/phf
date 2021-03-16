@@ -26,7 +26,7 @@ function ph_films() {
 		'rewrite' => array("slug" => "films"),
 		'menu_position' => 3,
 		'supports' => array('title','editor','thumbnail','excerpt'),
-		'menu_icon' => get_stylesheet_directory_uri() . '/img/film-icon.jpg',
+		'menu_icon' => 'dashicons-format-video',
 	  ); 
  	
 	if (class_exists('MultiPostThumbnails')) {
